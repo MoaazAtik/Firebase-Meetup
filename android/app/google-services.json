@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:489332548768:android:e7fd020fd63a16985595c5",
+        "mobilesdk_app_id": "1:489332548768:android:ad56ac5d0c02006e5595c5",
         "android_client_info": {
-          "package_name": "com.example.gtk_flutter"
+          "package_name": "com.whitewings.firebasemeetup"
         }
       },
       "oauth_client": [],

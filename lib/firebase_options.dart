@@ -45,7 +45,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyCA7DuRv_OE5nqCVCTrkkfQSL6L3gKURE8',
-    appId: '1:489332548768:web:73182b5c8623efde5595c5',
+    appId: '1:489332548768:web:2b427132817704e65595c5',
     messagingSenderId: '489332548768',
     projectId: 'fir-flutter-codelab-89a70',
     authDomain: 'fir-flutter-codelab-89a70.firebaseapp.com',
@@ -54,7 +54,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAxU7ggGDI9WpPPihp7cPcp7TuenWEXrzY',
-    appId: '1:489332548768:android:e7fd020fd63a16985595c5',
+    appId: '1:489332548768:android:ad56ac5d0c02006e5595c5',
     messagingSenderId: '489332548768',
     projectId: 'fir-flutter-codelab-89a70',
     storageBucket: 'fir-flutter-codelab-89a70.firebasestorage.app',
@@ -62,19 +62,19 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyClXPYzKcP-POvUJsPgd0fbNmxa_sdwJ44',
-    appId: '1:489332548768:ios:6206e4132cfda9695595c5',
+    appId: '1:489332548768:ios:5c795bcff00ad9655595c5',
     messagingSenderId: '489332548768',
     projectId: 'fir-flutter-codelab-89a70',
     storageBucket: 'fir-flutter-codelab-89a70.firebasestorage.app',
-    iosBundleId: 'com.example.gtkFlutter',
+    iosBundleId: 'com.whitewings.FirebaseMeetup',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyClXPYzKcP-POvUJsPgd0fbNmxa_sdwJ44',
-    appId: '1:489332548768:ios:6206e4132cfda9695595c5',
+    appId: '1:489332548768:ios:5c795bcff00ad9655595c5',
     messagingSenderId: '489332548768',
     projectId: 'fir-flutter-codelab-89a70',
     storageBucket: 'fir-flutter-codelab-89a70.firebasestorage.app',
-    iosBundleId: 'com.example.gtkFlutter',
+    iosBundleId: 'com.whitewings.FirebaseMeetup',
   );
 }

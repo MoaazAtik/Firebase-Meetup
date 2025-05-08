@@ -8,5 +8,9 @@
 	<true/>
 	<key>com.apple.security.network.server</key>
 	<true/>
+
+    <!-- Configure the app with network client privileges for network communication with the Firebase servers -->
+    <key>com.apple.security.network.client</key>
+    <true/>
 </dict>
 </plist>

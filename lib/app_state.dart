@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart'
     hide EmailAuthProvider, PhoneAuthProvider;
@@ -6,6 +8,7 @@ import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
+import 'guest_book_message.dart';
 
 class ApplicationState extends ChangeNotifier {
   ApplicationState() {
@@ -15,6 +18,10 @@ class ApplicationState extends ChangeNotifier {
   bool _loggedIn = false;
 
   bool get loggedIn => _loggedIn;
+
+  StreamSubscription<QuerySnapshot>? _guestBookSubscription;
+  List<GuestBookMessage> _guestBookMessages = [];
+  List<GuestBookMessage> get guestBookMessages => _guestBookMessages;
 
   Future<void> init() async {
     await Firebase.initializeApp(
@@ -26,10 +33,30 @@ class ApplicationState extends ChangeNotifier {
     ]);
 
     FirebaseAuth.instance.userChanges().listen((user) {
-      if (user != null)
+      if (user != null) {
         _loggedIn = true;
-      else
+        _guestBookSubscription = FirebaseFirestore.instance
+            .collection('guestbook')
+            .orderBy('timestamp', descending: true)
+            .limit(100) /* Optional. For advanced usage apply pagination. */
+            .snapshots()
+            .listen((snapshot) {
+          _guestBookMessages = [];
+          for (final document in snapshot.docs) {
+            _guestBookMessages.add(
+              GuestBookMessage(
+                  name: document.data()['name'] as String,
+                  message: document.data()['text'] as String
+              ),
+            );
+          }
+          notifyListeners();
+        });
+      } else {
         _loggedIn = false;
+        _guestBookMessages = [];
+        _guestBookSubscription?.cancel();
+      }
 
       notifyListeners();
     });

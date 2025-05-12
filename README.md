@@ -15,12 +15,14 @@ It covers:<br>
 <br>
 
 <div align="center">
-  <img src="demo/Flutter Meetup - iOS.png"  alt="iOS screenshot"  width="280"/>
-  <img src="demo/Flutter Meetup - Android.png"  alt="Android screenshot"  width="220"/>
+  <img src="demo/Flutter Meetup - iOS.png"  alt="iOS screenshot"  width="210"/>
+  <img src="demo/Flutter Meetup - Android.png"  alt="Android screenshot"  width="200"/>
+  <img src="demo/Flutter Meetup - macOS.png"  alt="macOS screenshot"  width="220"/>
+  <img src="demo/Flutter Meetup - web.png"  alt="web screenshot"  width="220"/>
 </div>
 <div align="center">
-  <img src="demo/Flutter Meetup - web.png"  alt="web screenshot"  width="280"/>
-<img src="demo/Flutter Meetup - macOS.png"  alt="macOS screenshot"  width="280"/>
+  <img src="demo/Flutter Meetup - sign in - web.jpg"  alt="web sign in screenshot"  width="280"/>
+  <img src="demo/Flutter Meetup - profile - web.jpg"  alt="web profile screenshot"  width="280"/>
 </div>
 
 <div align="center">

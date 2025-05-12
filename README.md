@@ -9,7 +9,7 @@ It covers:<br>
 ✔️ The basics of building a full-stack, multi-platform, interactive and real-time Flutter app<br>
 ✔️ Firebase Projects & Apps<br>
 ✔️ Firebase **Authentication**<br>
-✔️ **Cloud Firestore** Database<br>
+✔️ NoSQL **Cloud Firestore** Database<br>
 ✔️ Firebase Security Rules
 
 <br>
